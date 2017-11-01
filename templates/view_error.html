@@ -1,0 +1,24 @@
+{% extends "main.html" %}
+{% block content %}
+<h2>Days with errors more than 1%</h2>
+<section class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Error</th>
+        <th>Number of percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for error in errors %}
+      <tr>
+        <td>{{ error[0] }}</td>
+        <td>{{ error[1] }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}
+
+
