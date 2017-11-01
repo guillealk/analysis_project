@@ -1,4 +1,4 @@
- Analysis Projec
+ Analysis Project
 
 Project of Full Stack Web Development Udacity Nanodegree
 
