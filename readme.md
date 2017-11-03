@@ -11,8 +11,8 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-- Vagrant 1.8.5. Follow the steps from here: [https://howtoprogram.xyz/2016/07/23/install-vagrant-ubuntu-16-04/]
-- Virtualbox 5.0. Download and install from here: [https://www.virtualbox.org/wiki/Download_Old_Builds_5_0]
+- Vagrant 1.8.5. Follow the steps from here: https://howtoprogram.xyz/2016/07/23/install-vagrant-ubuntu-16-04/
+- Virtualbox 5.0. Download and install from here: https://www.virtualbox.org/wiki/Download_Old_Builds_5_0
 
 ```
 
