@@ -11,8 +11,8 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-- Vagrant 1.8.5. Follow the steps from here: https://howtoprogram.xyz/2016/07/23/install-vagrant-ubuntu-16-04/
-- Virtualbox 5.0. Download and install from here: https://www.virtualbox.org/wiki/Download_Old_Builds_5_0
+- Vagrant 1.8.5. Follow the steps from here: [https://howtoprogram.xyz/2016/07/23/install-vagrant-ubuntu-16-04/]
+- Virtualbox 5.0. Download and install from here: [https://www.virtualbox.org/wiki/Download_Old_Builds_5_0]
 
 ```
 
@@ -32,7 +32,7 @@ To load the data, **cd /vagrant/Analysis\ Project/** and use the command **psql 
 Here's what this command does:
 
 * ***psql:*** the PostgreSQL command line program
-* ***-d news:***connect to the database named news which has been set up for you
+* ***-d news:*** connect to the database named news which has been set up for you
 * ***-f newsdata.sql:*** run the SQL statements in the file newsdata.sql
 
 Explore to your database using **psql -d news** and explore the tables using the **\dt** and **\d table** commands and select statements.
