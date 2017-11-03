@@ -52,6 +52,6 @@ The database includes three tables:
 
 Once the vagrant machine is up and the *news* database is setted, do the following steps:
 
-1. In the command line write **python views.py** 
+1. In the command line write **python view.py** 
 2. Go to your web browser and enter *http://localhost:8000/*
 

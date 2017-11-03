@@ -9,18 +9,18 @@ def main():
 
 
 @app.route('/article', methods=['POST', 'GET'])
-def viewArticle():
-    return render_template('view_article.html', articles=project.getArticles())
+def view_article():
+    return render_template('view_article.html', articles=project.get_articles())
 
 
 @app.route('/author', methods=['POST', 'GET'])
-def viewAuthor():
-    return render_template('view_author.html', authors=project.getAuthors())
+def view_author():
+    return render_template('view_author.html', authors=project.get_authors())
 
 
 @app.route('/error', methods=['POST', 'GET'])
-def viewError():
-    return render_template('view_error.html', errors=project.getErrors())
+def view_error():
+    return render_template('view_error.html', errors=project.get_errors())
 
 
 if __name__ == '__main__':
