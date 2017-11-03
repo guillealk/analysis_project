@@ -10,12 +10,14 @@ def main():
 
 @app.route('/article', methods=['POST', 'GET'])
 def view_article():
-    return render_template('view_article.html', articles=project.get_articles())
+    return render_template('view_article.html',
+                           articles=project.get_articles())
 
 
 @app.route('/author', methods=['POST', 'GET'])
 def view_author():
-    return render_template('view_author.html', authors=project.get_authors())
+    return render_template('view_author.html',
+                           authors=project.get_authors())
 
 
 @app.route('/error', methods=['POST', 'GET'])
