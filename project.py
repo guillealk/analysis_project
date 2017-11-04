@@ -2,7 +2,6 @@ import psycopg2
 
 
 def get_articles():
-
     query = ('select a.title, count(*) as views '
              'from log,(select slug, title from articles) as a '
              'where substring(path from 10 for character_length(path)) = slug '
@@ -22,13 +21,13 @@ def get_authors():
 
 
 def get_errors():
-    value = "'404 NOT FOUND'"
     query = ('select date(time) as date, '
-             'round(count(status)*100.0/(select count(*) from log)*100, 2) '
-             'as error from log '
-             'where status=%s group by date '
-             'having count(status)*100.0/(select count(*) from log)*100 > 1 '
-             'order by error desc;' % value)
+             'round(sum(case when status !=\'200 OK\' then 1 else 0 end) '
+             '* 100.0 / count(*), 2) as error from log '
+             'group by date '
+             'having sum(case when status !=\'200 OK\' then 1 else 0 end) '
+             '* 100.0 / count(*) > 1 '
+             'order by error;')
     return get_entries(query)
 
 
